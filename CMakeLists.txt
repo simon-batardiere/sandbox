@@ -7,8 +7,9 @@ project(
 )
 
 if(CMAKE_SOURCE_DIR STREQUAL CMAKE_BINARY_DIR)
-	message(FATAL_ERROR "In-source builds not allowed. Please make a new directory (called a build directory) and run CMake from there.")
+	message(FATAL_ERROR "In-source builds is not allowed.")
 endif()
 
-add_executable(Sandbox source/main.cpp)
+add_subdirectory(source)
+add_subdirectory(app)
 
