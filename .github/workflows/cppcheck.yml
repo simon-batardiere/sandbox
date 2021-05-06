@@ -34,4 +34,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          sudo apt-get install cppcheck
           cppcheck --error-exitcode=1 --quiet -ibuild .
