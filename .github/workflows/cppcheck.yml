@@ -19,7 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install cppcheck
-        run: sudo apt-get install cppcheck
+      - name: Install cppcheck tool
+        run: |
+          sudo apt-get update
+          sudo apt-get install cppcheck
+
       - name: Execute cppcheck
         run: cppcheck --error-exitcode=1 --quiet .         
