@@ -18,4 +18,4 @@ jobs:
           sudo apt-get install cppcheck
 
       - name: Execute cppcheck
-        run: cppcheck --error-exitcode=1 --quiet .         
+        run: cppcheck --error-exitcode=1 -i build -i third-party --quiet .
