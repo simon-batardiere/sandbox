@@ -10,7 +10,7 @@
 
 TEST(sandbox, sandbox) {
 	sandbox::sandbox();
-	EXPECT_EQ(0, 0);
+	EXPECT_EQ(0, 1);
 }
 
 TEST(sandbox, echo) {
