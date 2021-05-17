@@ -20,7 +20,7 @@ jobs:
         submodules: 'recursive'
 
     - name: Configure
-      run: cmake -B build . 
+      run: cmake -B build -DCMAKE_CXX_STANDARD=17 . 
 
     - name: Build
       run: cmake --build build
