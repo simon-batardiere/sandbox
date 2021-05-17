@@ -9,7 +9,8 @@
 #include <sandbox/sandbox.h>
 
 TEST(sandbox, sandbox) {
-	EXPECT_EQ(1, 0);
+	sandbox::sandbox();
+	EXPECT_EQ(0, 0);
 }
 
 TEST(sandbox, echo) {
