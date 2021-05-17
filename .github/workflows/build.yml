@@ -20,7 +20,7 @@ jobs:
         submodules: 'recursive'
 
     - name: Configure
-      run: cmake -B build . 
+      run: cmake -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON -B build . 
 
     - name: Build
       run: cmake --build build
