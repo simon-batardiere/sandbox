@@ -5,14 +5,11 @@
 // file except in compliance with the License. You can obtain a copy in the file
 // LICENSE in the source distribution.
 
-#include <iostream>
-#include "sandbox.h"
+#include <gtest/gtest.h>
 
-int main()
+int main(int argc, char** argv)
 {
-	//int a[10];
-	//a[10] = 1;
-	std::cout << "Hello world!" << std::endl;
-	sandbox::sandbox();
+	::testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
 }
 
