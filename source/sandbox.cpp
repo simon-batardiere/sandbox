@@ -13,5 +13,10 @@ void sandbox()
 {
 	std::cout << "Have fun!" << std::endl;
 }
+
+int echo(int number)
+{
+	return number;
+}
 }
 

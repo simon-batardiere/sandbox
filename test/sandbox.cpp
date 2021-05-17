@@ -5,13 +5,17 @@
 // file except in compliance with the License. You can obtain a copy in the file
 // LICENSE in the source distribution.
 
-#ifndef SANDBOX_H
+#include <gtest/gtest.h>
+#include <sandbox/sandbox.h>
 
-namespace sandbox {
-void sandbox();
-int echo(int number);
+TEST(sandbox, sandbox) {
+	EXPECT_EQ(1, 0);
 }
 
-#define SANDBOX_H
-#endif // SANDBOX_H
+TEST(sandbox, echo) {
+	EXPECT_EQ(sandbox::echo(0), 0);
+	EXPECT_EQ(sandbox::echo(1), 1);
+	EXPECT_EQ(sandbox::echo(-1), -1);
+	EXPECT_EQ(sandbox::echo(100), 100);
+}
 
