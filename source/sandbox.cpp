@@ -13,6 +13,7 @@ namespace sandbox {
 void sandbox()
 {
 	std::cout << "Have fun!" << std::endl;
+	std::cout << "Enjoy!" << std::endl;
 }
 
 int echo(int number)
