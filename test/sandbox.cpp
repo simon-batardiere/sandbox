@@ -10,14 +10,13 @@
 #include <sandbox/sandbox.h>
 
 TEST(sandbox, sandbox) {
-	sandbox::sandbox();
-	EXPECT_EQ(0, 0);
+  sandbox::sandbox();
+  EXPECT_EQ(0, 0);
 }
 
 TEST(sandbox, echo) {
-	EXPECT_EQ(sandbox::echo(0), 0);
-	EXPECT_EQ(sandbox::echo(1), 1);
-	EXPECT_EQ(sandbox::echo(-1), -1);
-	EXPECT_EQ(sandbox::echo(100), 100);
+  EXPECT_EQ(sandbox::echo(0), 0);
+  EXPECT_EQ(sandbox::echo(1), 1);
+  EXPECT_EQ(sandbox::echo(-1), -1);
+  EXPECT_EQ(sandbox::echo(100), 100);
 }
-
