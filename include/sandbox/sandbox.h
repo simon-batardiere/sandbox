@@ -11,8 +11,7 @@
 namespace sandbox {
 void sandbox();
 int echo(int number);
-}
+}  // namespace sandbox
 
 #define SANDBOX_H
-#endif // SANDBOX_H
-
+#endif  // SANDBOX_H
