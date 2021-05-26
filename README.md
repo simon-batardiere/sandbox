@@ -34,9 +34,5 @@ Contributions are what make the open source community such an amazing place to b
 ## License
 Distributed under the Apache License 2.0 License. See `LICENSE` for more information.
 
-## Contact
-Simon Batardiere
-Project Link: [https://github.com/simon-batardiere/sandbox](https://github.com/simon-batardiere/sandbox)
-
 ## Acknowledgements
 * [GoogleTest](https://github.com/google/googletest)
