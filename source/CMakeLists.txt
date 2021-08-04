@@ -6,6 +6,7 @@
 # with the License. You can obtain a copy in the file LICENSE in the source
 # distribution.
 
+find_package(Boost REQUIRED)
 add_library(sandbox ../include/sandbox/sandbox.h sandbox.cpp)
 set_target_properties(sandbox PROPERTIES CXX_STANDARD 17)
 target_include_directories(
